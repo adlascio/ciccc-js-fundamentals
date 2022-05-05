@@ -28,6 +28,6 @@ while (x < 100) {
     }
 
     // check divisibility
-    // print Julia, James, or JuliaJames
+    // print Fizz, Buzz, or FizzBuzz
     // increment x
 }
