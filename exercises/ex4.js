@@ -11,3 +11,26 @@ Fill in the blanks with the flavor of the ice cream, vessel, and toppings. For e
 
 I'd like two scoops of vanilla ice cream in a cone with peanuts. 
 */
+
+const ice = (flavor , vessel, toppings ) =>{
+    let checkFlavor = false
+    let checkVessel = false
+    let checkToppings = false
+    if(flavor === "vanila" || flavor === "chocolate"){
+        checkFlavor = true
+    }
+    if(vessel === "cone" || vessel === "bowl"){
+        checkVessel = true
+    }
+    if(toppings === "sprinkles" || toppings === "peanuts"){
+        checkToppings = true
+    }
+    if(checkFlavor == true && checkVessel == true && checkToppings == true ){
+        console.log(`Id like twoo scoope of ${flavor} ice cream in a ${vessel} with ${toppings}`)
+    }
+    
+}
+ice("vanila", "cone", "sprinkles")
+ice("chocolate", "cone", "sprinkles")
+ice("orange", "cone", "sprinkles")
+

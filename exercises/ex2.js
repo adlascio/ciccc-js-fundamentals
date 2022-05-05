@@ -10,3 +10,16 @@ Write a series of conditional statements that:
 
 */
 
+let group = 1;
+if(group === 1){
+    console.log('solo')
+}else if (group ===2){
+    console.log("duet")
+}else if (group === 3){
+    console.log("trio")
+}else if (group === 4){
+    console.log("quartet")
+}else if(group > 4){
+    console.log("this is large group")
+}
+
