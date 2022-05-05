@@ -9,6 +9,7 @@ Write a series of conditional statements that:
 - Prints "this is a large group" if musicians is greater than 4
 
 */
+
 let group = 1;
 if(group === 1){
     console.log('solo')
