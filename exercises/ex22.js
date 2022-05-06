@@ -4,10 +4,14 @@ James was creating an array with the colors of the rainbow, and he forgot some c
 var rainbow = ["Red", "Orange", "Yellow", "Green", "Blue", "Purple"];
 but James had this:
 
-var rainbow = ["Red", "Orange", "Blackberry", "Blue"];
 Using only the splice() method, insert the missing colors into the array, and remove the color "Blackberry" by following these steps:
 
 Remove "Blackberry"
 Add "Yellow" and "Green"
 Add "Purple"
 */
+
+var rainbow = ["Red", "Orange", "Blackberry", "Blue"];
+rainbow.splice(1,1,"Yellow", "Green")
+rainbow.splice(5,1,"Purple")
+console.log(rainbow)
