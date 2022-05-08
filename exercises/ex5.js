@@ -26,3 +26,41 @@ var shirtSleeve = 8.47; // size M (medium)
 Then print N/A to the console because the measurements don't all match up with one particular size.
 
 */
+const result = (person) => {
+    if (person.witdh <= 19 && person.Length <= 28 && person.Sleeve <= 8.13) {
+        console.log(`${person.name} is S`)
+        return;
+    } else if (18 < person.witdh <= 20 && person.Length == 29 && 8.13 < person.Sleeve <= 8.38) {
+        console.log(`${person.name} is M`)
+    } else if (20 < person.witdh <= 22 && person.Length == 30 && 8.38 < person.Sleeve <= 8.63) {
+        console.log(`${person.name} is L`)
+    } else if (22 < person.witdh <= 24 && person.Length == 331 && 8.63 < person.Sleeve <= 8.88) {
+        console.log(`${person.name} is XL`)
+    }else {
+        console.log(`${person.name} is N/A`)
+    }
+
+}
+
+const person1 = {
+    name: "atsu",
+    witdh: 18,
+    Length: 28,
+    Sleeve: 8.13
+}
+const person2 = {
+    name: "vini",
+    witdh: 20,
+    Length: 29,
+    Sleeve: 8.38
+}
+const person3 = {
+    name: "kent",
+    witdh: 20,
+    Length: 32,
+    Sleeve: 8.38
+}
+
+result(person1)
+result(person2)
+result(person3)
