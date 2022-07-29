@@ -33,5 +33,11 @@ function makeLine(length) {
     for (var j = 1; j <= length; j++) {
       line += "* "
     }
-    return line + "\n";
+    console.log( line + "\n")
 }
+function buildTriangle(line){
+  for(let i = 1; i<= line; i++){
+    makeLine(i)
+  }
+}
+buildTriangle(10)
